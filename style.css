@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background--color: #f4d04e;
+  --container--background: #FFFFFF;
+}
+
+body {
+  background-color: var(--background--color);
+  max-width: 1440px;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-family: "Figtree", sans-serif;
+  font-size: 16px;
+}
+
+/* Container */
+.container {
+  background-color: var(--container--background);
+  max-width: 384px;
+  width: 100%;
+  height: 522px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 10px 6px 0;
+  margin-bottom: 20px;
+}
+
+.main-category {
+  padding: 8px;
+  margin: 10px 0;
+  display: inline-block;
+  background-color: var(--background--color);
+  border-radius: 5px;
+}
+
+/* Main Image */
+.blog-preview-card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-title {
+  margin: 15px 0;
+}
+
+.main-description {
+  margin-bottom: 30px;
+}
+
+.blog-preview-card-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.author {
+  display: flex;
+}
+
+.author-name {
+  display: flex;
+  align-items: center;
+}
+
+.author-image img{
+  width: 2rem;
+}
+
+.author-image {
+ margin-right: 10px;
+}
+
+@media (max-width: 350px) {
+  .container {
+    max-width: 100vw;
+    width: 100vw;
+    padding: 8px;
+    height: auto;
+    box-sizing: border-box;
+  }
+  .main-title, .main-description, .main-category {
+    font-size: 0.9rem;
+  }
+  .author {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .author-image img {
+    width: 1.3rem;
+  }
+  .author-name {
+    font-size: 0.8rem;
+  }
+}
+
+/* Text Classes */
+.text-preset-1 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  font-weight: 800;
+}
+
+.text-preset-2 {
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  font-weight: 500;
+}
+
+.text-preset-3 {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  font-weight: 500;
+}
+
+.text-preset-4 {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  font-weight: 800;
+}
